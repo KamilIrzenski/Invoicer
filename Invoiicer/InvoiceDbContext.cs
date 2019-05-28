@@ -1,5 +1,6 @@
 
 using Invoiicer.Entities;
+using Invoiicer.Initializers;
 
 namespace Invoicer
 {
@@ -12,6 +13,7 @@ namespace Invoicer
        
         public InvoiceDbContext() : base("name=InvoiceDbContext")
         {
+            Database.SetInitializer(new InvoiceDbInitializer());
         }
 
         public DbSet<Product> Products { get; set; }
