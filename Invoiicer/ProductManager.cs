@@ -12,11 +12,20 @@ namespace Invoiicer
     {
         public static void AddProduct(Product p)
         {
-            using (InvoiceDbContext context = new InvoiceDbContext())
+            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
             {
-                context.Products.Add(p);
-                context.SaveChanges();
+                invoiceDbContext.Products.Add(p);
+                invoiceDbContext.SaveChanges();
             }
         }
+
+        public static List<Product> GetProducts()
+        {
+            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
+            {
+                return invoiceDbContext.Products.ToList();
+            }
+        }
+
     }
 }

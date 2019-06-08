@@ -59,6 +59,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Invoicer.Frontend\Invoicer.Frontend.csproj">
+      <Project>{464f4033-b21a-46cb-a763-e50a84b4e022}</Project>
+      <Name>Invoicer.Frontend</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Invoiicer\Invoicer.Backend.csproj">
       <Project>{fbfa641e-4666-48f8-baed-dc34b62d2543}</Project>
       <Name>Invoicer.Backend</Name>

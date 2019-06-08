@@ -15,9 +15,13 @@ namespace Invoicer.Frontend
 {
     public partial class ProductForm : Form
     {
+        public List<Product> products;
+
         public ProductForm()
         {
             InitializeComponent();
+            products = ProductManager.GetProducts();
+            productListBox.DataSource = products;
         }
 
         private void AddProductButton_Click(object sender, EventArgs e)

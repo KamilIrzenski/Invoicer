@@ -39,6 +39,7 @@
             this.isbnTextBox1 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
+            this.productListBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // AddProductButton
@@ -70,7 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 120);
+            this.label2.Location = new System.Drawing.Point(12, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 3;
@@ -79,7 +80,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 169);
+            this.label3.Location = new System.Drawing.Point(12, 111);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 17);
             this.label3.TabIndex = 4;
@@ -87,14 +88,14 @@
             // 
             // amountTextBox
             // 
-            this.amountTextBox.Location = new System.Drawing.Point(97, 164);
+            this.amountTextBox.Location = new System.Drawing.Point(97, 111);
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(141, 22);
             this.amountTextBox.TabIndex = 5;
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(97, 115);
+            this.priceTextBox.Location = new System.Drawing.Point(97, 164);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(141, 22);
             this.priceTextBox.TabIndex = 6;
@@ -131,11 +132,21 @@
             this.descriptionTextBox.Size = new System.Drawing.Size(141, 22);
             this.descriptionTextBox.TabIndex = 10;
             // 
+            // productListBox
+            // 
+            this.productListBox.FormattingEnabled = true;
+            this.productListBox.ItemHeight = 16;
+            this.productListBox.Location = new System.Drawing.Point(367, 67);
+            this.productListBox.Name = "productListBox";
+            this.productListBox.Size = new System.Drawing.Size(347, 292);
+            this.productListBox.TabIndex = 11;
+            // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.productListBox);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.isbnTextBox1);
@@ -167,5 +178,6 @@
         private System.Windows.Forms.TextBox isbnTextBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox descriptionTextBox;
+        private System.Windows.Forms.ListBox productListBox;
     }
 }
