@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Invoicer;
-using Invoiicer.Entities;
+using Invoicer.Entities;
 
-namespace Invoiicer
+namespace Invoicer
 {
     public static class ProductManager
     {

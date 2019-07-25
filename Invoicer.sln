@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invoicer.Backend", "Invoiicer\Invoicer.Backend.csproj", "{FBFA641E-4666-48F8-BAED-DC34B62D2543}"
 EndProject
@@ -32,6 +32,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A017A419-8239-49CC-8534-1A07B9FEC643}
+		SolutionGuid = {E2935891-7FF9-4A3B-8D86-F02D75202282}
 	EndGlobalSection
 EndGlobal

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Invoiicer
+namespace Invoicer
 {
     public class Class1
     {

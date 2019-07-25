@@ -7,8 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Invoiicer;
-using Invoiicer.Entities;
+using Invoicer;
+using Invoicer.Entities;
 
 
 namespace Invoicer.Frontend
@@ -20,6 +20,7 @@ namespace Invoicer.Frontend
         public ProductForm()
         {
             InitializeComponent();
+
             products = ProductManager.GetProducts();
             productListBox.DataSource = products;
         }

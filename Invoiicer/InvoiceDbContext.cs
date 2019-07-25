@@ -1,6 +1,6 @@
 
-using Invoiicer.Entities;
-using Invoiicer.Initializers;
+using Invoicer.Entities;
+using Invoicer.Initializers;
 
 namespace Invoicer
 {
@@ -17,6 +17,7 @@ namespace Invoicer
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Companies> Companieses { get; set; }
     }
 
    

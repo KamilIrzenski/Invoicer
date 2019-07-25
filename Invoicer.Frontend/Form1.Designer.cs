@@ -31,11 +31,12 @@
             this.ProductButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
             this.listProductButton = new System.Windows.Forms.Button();
+            this.addCompaniesButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ProductButton
             // 
-            this.ProductButton.Location = new System.Drawing.Point(45, 51);
+            this.ProductButton.Location = new System.Drawing.Point(45, 28);
             this.ProductButton.Name = "ProductButton";
             this.ProductButton.Size = new System.Drawing.Size(179, 55);
             this.ProductButton.TabIndex = 0;
@@ -55,19 +56,29 @@
             // 
             // listProductButton
             // 
-            this.listProductButton.Location = new System.Drawing.Point(45, 155);
+            this.listProductButton.Location = new System.Drawing.Point(45, 89);
             this.listProductButton.Name = "listProductButton";
-            this.listProductButton.Size = new System.Drawing.Size(179, 71);
+            this.listProductButton.Size = new System.Drawing.Size(179, 60);
             this.listProductButton.TabIndex = 2;
             this.listProductButton.Text = "Lista Produktow";
             this.listProductButton.UseVisualStyleBackColor = true;
             this.listProductButton.Click += new System.EventHandler(this.listProductButton_Click);
+            // 
+            // addCompaniesButton
+            // 
+            this.addCompaniesButton.Location = new System.Drawing.Point(45, 155);
+            this.addCompaniesButton.Name = "addCompaniesButton";
+            this.addCompaniesButton.Size = new System.Drawing.Size(179, 64);
+            this.addCompaniesButton.TabIndex = 3;
+            this.addCompaniesButton.Text = "Dodaj Firme";
+            this.addCompaniesButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(281, 416);
+            this.Controls.Add(this.addCompaniesButton);
             this.Controls.Add(this.listProductButton);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.ProductButton);
@@ -83,6 +94,7 @@
         private System.Windows.Forms.Button ProductButton;
         private System.Windows.Forms.Button exitButton;
         private System.Windows.Forms.Button listProductButton;
+        private System.Windows.Forms.Button addCompaniesButton;
     }
 }
 

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Invoicer;
-using Invoiicer.Entities;
+using Invoicer.Entities;
 
-namespace Invoiicer.Initializers
+namespace Invoicer.Initializers
 {
     class InvoiceDbInitializer : DropCreateDatabaseAlways<InvoiceDbContext>
     {
