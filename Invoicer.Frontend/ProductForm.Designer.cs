@@ -40,21 +40,24 @@
             this.label5 = new System.Windows.Forms.Label();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.productListBox = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.cancelBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddProductButton
             // 
-            this.AddProductButton.Location = new System.Drawing.Point(14, 328);
+            this.AddProductButton.Location = new System.Drawing.Point(149, 218);
             this.AddProductButton.Name = "AddProductButton";
-            this.AddProductButton.Size = new System.Drawing.Size(151, 36);
+            this.AddProductButton.Size = new System.Drawing.Size(89, 23);
             this.AddProductButton.TabIndex = 0;
-            this.AddProductButton.Text = "Dodaj";
+            this.AddProductButton.Text = "Add";
             this.AddProductButton.UseVisualStyleBackColor = true;
             this.AddProductButton.Click += new System.EventHandler(this.AddProductButton_Click);
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(97, 67);
+            this.nameTextBox.Location = new System.Drawing.Point(97, 29);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(141, 22);
             this.nameTextBox.TabIndex = 1;
@@ -62,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 67);
+            this.label1.Location = new System.Drawing.Point(12, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 17);
             this.label1.TabIndex = 2;
@@ -71,7 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 164);
+            this.label2.Location = new System.Drawing.Point(12, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 17);
             this.label2.TabIndex = 3;
@@ -80,7 +83,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 111);
+            this.label3.Location = new System.Drawing.Point(12, 57);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 17);
             this.label3.TabIndex = 4;
@@ -88,14 +91,14 @@
             // 
             // amountTextBox
             // 
-            this.amountTextBox.Location = new System.Drawing.Point(97, 111);
+            this.amountTextBox.Location = new System.Drawing.Point(97, 57);
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(141, 22);
             this.amountTextBox.TabIndex = 5;
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(97, 164);
+            this.priceTextBox.Location = new System.Drawing.Point(97, 85);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(141, 22);
             this.priceTextBox.TabIndex = 6;
@@ -103,7 +106,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 219);
+            this.label4.Location = new System.Drawing.Point(12, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 17);
             this.label4.TabIndex = 7;
@@ -111,7 +114,7 @@
             // 
             // isbnTextBox1
             // 
-            this.isbnTextBox1.Location = new System.Drawing.Point(97, 214);
+            this.isbnTextBox1.Location = new System.Drawing.Point(97, 113);
             this.isbnTextBox1.Name = "isbnTextBox1";
             this.isbnTextBox1.Size = new System.Drawing.Size(141, 22);
             this.isbnTextBox1.TabIndex = 8;
@@ -119,7 +122,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 273);
+            this.label5.Location = new System.Drawing.Point(12, 141);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(79, 17);
             this.label5.TabIndex = 9;
@@ -127,7 +130,7 @@
             // 
             // descriptionTextBox
             // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(97, 268);
+            this.descriptionTextBox.Location = new System.Drawing.Point(97, 141);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(141, 22);
             this.descriptionTextBox.TabIndex = 10;
@@ -136,16 +139,47 @@
             // 
             this.productListBox.FormattingEnabled = true;
             this.productListBox.ItemHeight = 16;
-            this.productListBox.Location = new System.Drawing.Point(367, 67);
+            this.productListBox.Location = new System.Drawing.Point(261, 29);
             this.productListBox.Name = "productListBox";
-            this.productListBox.Size = new System.Drawing.Size(347, 292);
+            this.productListBox.Size = new System.Drawing.Size(544, 212);
             this.productListBox.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(258, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(78, 17);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Product list";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 17);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Add Product";
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.Location = new System.Drawing.Point(730, 247);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(75, 23);
+            this.cancelBtn.TabIndex = 14;
+            this.cancelBtn.Text = "Cancel";
+            this.cancelBtn.UseVisualStyleBackColor = true;
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
             // ProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(824, 290);
+            this.Controls.Add(this.cancelBtn);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.productListBox);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(this.label5);
@@ -179,5 +213,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.ListBox productListBox;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button cancelBtn;
     }
 }

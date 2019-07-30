@@ -16,8 +16,8 @@ namespace Invoicer.Entities
         public string NIP { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
-        public int ZIPCode { get; set; }
-        public string FlatNumber { get; set; }
+        public string ZIPCode { get; set; }
+        public int FlatNumber { get; set; }
         
 
     }

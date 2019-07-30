@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,6 +25,24 @@ namespace Invoicer
             using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
             {
                 return invoiceDbContext.Products.ToList();
+            }
+        }
+
+        public static void DeleteProduct(Product p)
+        {
+            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
+            {
+                invoiceDbContext.Products.Remove(p);
+                invoiceDbContext.SaveChanges();
+            }
+        }
+
+        public static void UpdateProduct(Product p)
+        {
+            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
+            {
+                invoiceDbContext.Products.AddOrUpdate(p);
+                invoiceDbContext.SaveChanges();
             }
         }
 

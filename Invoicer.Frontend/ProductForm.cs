@@ -37,5 +37,10 @@ namespace Invoicer.Frontend
             ProductManager.AddProduct(p);
             MessageBox.Show("Dodano!");
         }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

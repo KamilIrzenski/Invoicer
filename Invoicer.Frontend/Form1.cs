@@ -21,13 +21,7 @@ namespace Invoicer.Frontend
         {
 
         }
-
-        private void ProductButton_Click(object sender, EventArgs e)
-        {
-            ProductForm form = new ProductForm();
-            form.ShowDialog();
-        }
-
+        
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -35,11 +29,16 @@ namespace Invoicer.Frontend
 
         private void listProductButton_Click(object sender, EventArgs e)
         {
-
-            {
-                ProductForm form = new ProductForm();
-                form.ShowDialog();
-            }
+            ProductForm form = new ProductForm();
+            form.ShowDialog();
         }
-    }
+
+        private void companiesButton_Click(object sender, EventArgs e)
+        {
+            CompaniesForm form = new CompaniesForm();
+            form.ShowDialog();
+
+        }
+
+     }
 }
