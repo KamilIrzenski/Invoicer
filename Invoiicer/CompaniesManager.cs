@@ -19,7 +19,7 @@ namespace Invoicer
             }
         }
 
-        public static List<Companies> GetCompanieses()
+        public static List<Companies> GetCompanies()
         {
             using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
             {
@@ -32,6 +32,7 @@ namespace Invoicer
         {
             using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
             {
+                invoiceDbContext.Companieses.Attach(c);
                 invoiceDbContext.Companieses.Remove(c);
                 invoiceDbContext.SaveChanges();
             }

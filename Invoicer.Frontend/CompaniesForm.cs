@@ -17,7 +17,14 @@ namespace Invoicer.Frontend
         public CompaniesForm()
         {
             InitializeComponent();
-            companies = CompaniesManager.GetCompanieses();
+            ShowList();
+        }
+
+        private void ShowList()
+        {
+            companies = CompaniesManager.GetCompanies();
+            companiesListBox.ValueMember = "Id";
+            companiesListBox.DisplayMember = "NameCompanies";
             companiesListBox.DataSource = companies;
         }
 
@@ -33,13 +40,21 @@ namespace Invoicer.Frontend
            
             CompaniesManager.AddComapnies(c);
             MessageBox.Show("Dodano");
-
+            ShowList();
 
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void removeBtn_Click(object sender, EventArgs e)
+        {
+            var c = companiesListBox.SelectedItem as Companies;
+            CompaniesManager.DeleteCompanies(c);
+            companies.Remove(c);
+            ShowList();
         }
     }
 }

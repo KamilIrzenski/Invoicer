@@ -9,7 +9,7 @@ using Invoicer.Entities;
 
 namespace Invoicer.Initializers
 {
-    class InvoiceDbInitializer : DropCreateDatabaseAlways<InvoiceDbContext>
+    class InvoiceDbInitializer : DropCreateDatabaseIfModelChanges<InvoiceDbContext>
     {
         protected override void Seed(InvoiceDbContext context)
         {

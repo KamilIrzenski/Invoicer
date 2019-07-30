@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Text;
@@ -32,6 +34,7 @@ namespace Invoicer
         {
             using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
             {
+                invoiceDbContext.Products.Attach(p);
                 invoiceDbContext.Products.Remove(p);
                 invoiceDbContext.SaveChanges();
             }
