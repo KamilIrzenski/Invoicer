@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Invoicer.Entities
 {
-    public class InvoiceContainer : Company
+    public class Invoice
     {
         [Key]
         public int InvoiceID { get; set; }

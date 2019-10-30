@@ -22,7 +22,7 @@ namespace Invoiicer.Entities
 
         public Product Product { get; set; }
         //        public InvoiceContainer InvoiceContainer { get; set; }
-        public ICollection<InvoiceContainer> InvoiceContainers { get; set; }
+      //  public ICollection<InvoiceContainer> InvoiceContainers { get; set; }
 
     }
 }

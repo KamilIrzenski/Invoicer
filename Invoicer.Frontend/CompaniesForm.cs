@@ -30,7 +30,7 @@ namespace Invoicer.Frontend
 
         private void addCompaniesBtn_Click(object sender, EventArgs e)
         {
-            Companies c = new Companies();
+            Company c = new Company();
             c.NameCompanies = nameCompaniesTextBox.Text;
             c.NIP = nipTextBox.Text;
             c.Street = steetTextBox.Text;
@@ -51,7 +51,7 @@ namespace Invoicer.Frontend
 
         private void removeBtn_Click(object sender, EventArgs e)
         {
-            var c = companiesListBox.SelectedItem as Companies;
+            var c = companiesListBox.SelectedItem as Company;
             CompaniesManager.DeleteCompanies(c);
             companies.Remove(c);
             ShowList();

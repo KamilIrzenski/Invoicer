@@ -7,7 +7,7 @@ using Invoicer.Entities;
 
 namespace Invoiicer.Entities
 {
-    public class Vendor : Company
+    public class Contrahent : Company
     {
 
     }

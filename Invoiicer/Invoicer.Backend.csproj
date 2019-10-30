@@ -55,9 +55,8 @@
     <Compile Include="Entities\Company.cs" />
     <Compile Include="Entities\Invoice.cs" />
     <Compile Include="Entities\InvoiceItem.cs" />
-    <Compile Include="Entities\MyCompaniest.cs" />
     <Compile Include="Entities\Product.cs" />
-    <Compile Include="Entities\Vendor.cs" />
+    <Compile Include="Entities\Contrahent.cs" />
     <Compile Include="Initializers\InvoiceDbInitializer.cs" />
     <Compile Include="InvoiceDbContext.cs" />
     <Compile Include="ProductManager.cs" />
