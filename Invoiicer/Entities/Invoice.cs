@@ -11,8 +11,8 @@ namespace Invoicer.Entities
     {
         [Key]
         public int InvoiceID { get; set; }
-        public int VendorID { get; set; }
-        public int ReceiverID { get; set; }
+        public Company Vendor { get; set; }
+        public Company Reciever { get; set; }
         public int InvoiceNumber { get; set; }
         public DateTime IssuingDate { get; set; }
         public DateTime PaymentDate { get; set; }

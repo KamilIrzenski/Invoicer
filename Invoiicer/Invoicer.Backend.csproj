@@ -52,11 +52,10 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="CompaniesManager.cs" />
-    <Compile Include="Entities\Company.cs" />
+    <Compile Include="Entities\Contrahent.cs" />
     <Compile Include="Entities\Invoice.cs" />
     <Compile Include="Entities\InvoiceItem.cs" />
     <Compile Include="Entities\Product.cs" />
-    <Compile Include="Entities\Contrahent.cs" />
     <Compile Include="Initializers\InvoiceDbInitializer.cs" />
     <Compile Include="InvoiceDbContext.cs" />
     <Compile Include="ProductManager.cs" />
