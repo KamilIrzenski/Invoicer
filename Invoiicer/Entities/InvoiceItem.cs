@@ -9,14 +9,19 @@ using Invoicer.Entities;
 
 namespace Invoiicer.Entities
 {
-    class ListItemsFromInvoice
+    public class InvoiceItem
     {
 
         [Key]
-        public int ListId { get; set; }
+        public int InvoiceItemID { get; set; }
+        public int InvoiceID { get; set; }
+        public int ProductID { get; set; }
+        public int Quantity { get; set; }
+        public double PriceNet { get; set; }
+        public double Tax { get; set; }
 
         public Product Product { get; set; }
-//        public InvoiceContainer InvoiceContainer { get; set; }
+        //        public InvoiceContainer InvoiceContainer { get; set; }
         public ICollection<InvoiceContainer> InvoiceContainers { get; set; }
 
     }

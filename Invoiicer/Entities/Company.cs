@@ -7,18 +7,15 @@ using System.Threading.Tasks;
 
 namespace Invoicer.Entities
 {
-    public class Companies
+    public class Company
     {
-
         [Key]
-        public int FirmID { get; set; }
-        public string NameCompanies { get; set; }
-        public string NIP { get; set; }
+        public int CompanyID { get; set; }
+        public string Name { get; set; }
+        public string TaxNumber { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
         public string ZIPCode { get; set; }
-        public int FlatNumber { get; set; }
-        
-
+        public string FlatNumber { get; set; }
     }
 }
