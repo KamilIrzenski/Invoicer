@@ -11,7 +11,6 @@ namespace Invoiicer.Entities
 {
     public class InvoiceItem
     {
-
         [Key]
         public int InvoiceItemID { get; set; }
         public int InvoiceID { get; set; }
@@ -19,10 +18,6 @@ namespace Invoiicer.Entities
         public int Quantity { get; set; }
         public double PriceNet { get; set; }
         public double Tax { get; set; }
-
         public Product Product { get; set; }
-        //        public InvoiceContainer InvoiceContainer { get; set; }
-      //  public ICollection<InvoiceContainer> InvoiceContainers { get; set; }
-
     }
 }

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Invoiicer.Entities;
 
 namespace Invoicer.Entities
 {
@@ -16,8 +17,7 @@ namespace Invoicer.Entities
         public int InvoiceNumber { get; set; }
         public DateTime IssuingDate { get; set; }
         public DateTime PaymentDate { get; set; }
-        //  public int VAT { get; set; }
-       // public  Company Companies { get; set; }
+        public ICollection<InvoiceItem> InvoiceItems { get; set; }
     }
 
 
