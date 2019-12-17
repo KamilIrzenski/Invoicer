@@ -11,18 +11,17 @@ namespace Invoicer
 
     public class InvoiceDbContext : DbContext
     {
-       
         public InvoiceDbContext() : base("name=InvoiceDbContext")
         {
             Database.SetInitializer(new InvoiceDbInitializer());
         }
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<Company> Companies { get; set; }
+        public DbSet<Contrahent> Companies { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceItem> InvoiceItems { get; set; }
-
+        public DbSet<Setting> Settings { get; set; }
     }
 
-   
+
 }

@@ -40,5 +40,16 @@ namespace Invoicer.Frontend
 
         }
 
-     }
+        private void creatInvoiceBtn_Click(object sender, EventArgs e)
+        {
+            CreatInvoiceForm form = new CreatInvoiceForm();
+            form.ShowDialog();
+        }
+
+        private void invoicesBtn_Click(object sender, EventArgs e)
+        {
+            InvoicesForm form = new InvoicesForm();
+            form.ShowDialog();
+        }
+    }
 }

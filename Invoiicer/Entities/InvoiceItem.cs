@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Invoicer.Entities;
 
-namespace Invoiicer.Entities
+namespace Invoicer.Entities
 {
     public class InvoiceItem
     {

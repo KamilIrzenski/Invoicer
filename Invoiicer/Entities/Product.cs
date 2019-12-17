@@ -13,6 +13,7 @@ namespace Invoicer.Entities
         [Key]
         public int ProductID { get; set; }
         public string Name { get; set; }
+        public int Amount { get; set; }
         public double PriceNet { get; set; }
         public double Tax { get; set; }
     }

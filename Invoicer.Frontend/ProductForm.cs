@@ -18,12 +18,11 @@ namespace Invoicer.Frontend
     public partial class ProductForm : Form
     {
         public List<Product> products;
-       
+
         public ProductForm()
         {
             InitializeComponent();
             ShowList();
-
         }
 
         private void ShowList()
@@ -37,15 +36,11 @@ namespace Invoicer.Frontend
         {
             Product p = new Product();
             p.Name = nameTextBox.Text;
-            p.Amount = int.Parse(amountTextBox.Text);
-            p.Price = int.Parse(priceTextBox.Text);
-            p.ISBN = isbnTextBox1.Text;
-            p.Description = descriptionTextBox.Text;
-
+            p.PriceNet = double.Parse(priceTextBox.Text);
+            p.Tax = double.Parse(isbnTextBox1.Text);
             ProductManager.AddProduct(p);
             MessageBox.Show("Dodano!");
             ShowList();
-
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
@@ -67,10 +62,8 @@ namespace Invoicer.Frontend
         {
             var p = productListBox.SelectedItem as Product;
             p.Name = nameTextBox.Text;
-            p.Amount = int.Parse(amountTextBox.Text);
-            p.Description = descriptionTextBox.Text;
-            p.ISBN = isbnTextBox1.Text;
-            p.Price = int.Parse(priceTextBox.Text);
+            p.Tax = double.Parse(isbnTextBox1.Text);
+            p.PriceNet = double.Parse(priceTextBox.Text);
             ProductManager.UpdateProduct(p);
             ShowList();
         }

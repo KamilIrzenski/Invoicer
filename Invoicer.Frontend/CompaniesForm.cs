@@ -13,7 +13,7 @@ namespace Invoicer.Frontend
 {
     public partial class CompaniesForm : Form
     {
-        public List<Companies> companies;
+        public List<Contrahent> companies;
         public CompaniesForm()
         {
             InitializeComponent();
@@ -24,24 +24,23 @@ namespace Invoicer.Frontend
         {
             companies = CompaniesManager.GetCompanies();
             companiesListBox.ValueMember = "Id";
-            companiesListBox.DisplayMember = "NameCompanies";
+            companiesListBox.DisplayMember = "Name";
             companiesListBox.DataSource = companies;
         }
 
         private void addCompaniesBtn_Click(object sender, EventArgs e)
         {
-            Company c = new Company();
-            c.NameCompanies = nameCompaniesTextBox.Text;
-            c.NIP = nipTextBox.Text;
+            Contrahent c = new Contrahent();
+            c.Name = nameCompaniesTextBox.Text;
+            // c.NIP = nipTextBox.Text;
             c.Street = steetTextBox.Text;
-            c.FlatNumber = int.Parse(flatNumberTextBox.Text);
+            c.FlatNumber = flatNumberTextBox.Text;
             c.ZIPCode = zipCodeTextBox.Text;
             c.City = cityTextBox.Text;
-           
+
             CompaniesManager.AddComapnies(c);
             MessageBox.Show("Dodano");
             ShowList();
-
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
@@ -51,7 +50,7 @@ namespace Invoicer.Frontend
 
         private void removeBtn_Click(object sender, EventArgs e)
         {
-            var c = companiesListBox.SelectedItem as Company;
+            var c = companiesListBox.SelectedItem as Contrahent;
             CompaniesManager.DeleteCompanies(c);
             companies.Remove(c);
             ShowList();

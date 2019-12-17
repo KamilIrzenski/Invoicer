@@ -32,13 +32,9 @@
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.amountTextBox = new System.Windows.Forms.TextBox();
             this.priceTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.isbnTextBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.descriptionTextBox = new System.Windows.Forms.TextBox();
             this.productListBox = new System.Windows.Forms.ListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -76,31 +72,15 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 85);
+            this.label2.Location = new System.Drawing.Point(12, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 17);
+            this.label2.Size = new System.Drawing.Size(78, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Price";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 57);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Amount";
-            // 
-            // amountTextBox
-            // 
-            this.amountTextBox.Location = new System.Drawing.Point(97, 57);
-            this.amountTextBox.Name = "amountTextBox";
-            this.amountTextBox.Size = new System.Drawing.Size(141, 22);
-            this.amountTextBox.TabIndex = 5;
+            this.label2.Text = "Price Netto";
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(97, 85);
+            this.priceTextBox.Location = new System.Drawing.Point(97, 57);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(141, 22);
             this.priceTextBox.TabIndex = 6;
@@ -108,34 +88,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 113);
+            this.label4.Location = new System.Drawing.Point(12, 85);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 17);
+            this.label4.Size = new System.Drawing.Size(31, 17);
             this.label4.TabIndex = 7;
-            this.label4.Text = "ISBN";
+            this.label4.Text = "Tax";
             // 
             // isbnTextBox1
             // 
-            this.isbnTextBox1.Location = new System.Drawing.Point(97, 113);
+            this.isbnTextBox1.Location = new System.Drawing.Point(97, 85);
             this.isbnTextBox1.Name = "isbnTextBox1";
             this.isbnTextBox1.Size = new System.Drawing.Size(141, 22);
             this.isbnTextBox1.TabIndex = 8;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 141);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 17);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Description";
-            // 
-            // descriptionTextBox
-            // 
-            this.descriptionTextBox.Location = new System.Drawing.Point(97, 141);
-            this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(141, 22);
-            this.descriptionTextBox.TabIndex = 10;
             // 
             // productListBox
             // 
@@ -205,13 +169,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.productListBox);
-            this.Controls.Add(this.descriptionTextBox);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.isbnTextBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.priceTextBox);
-            this.Controls.Add(this.amountTextBox);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTextBox);
@@ -229,13 +189,9 @@
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox amountTextBox;
         private System.Windows.Forms.TextBox priceTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox isbnTextBox1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox descriptionTextBox;
         private System.Windows.Forms.ListBox productListBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;

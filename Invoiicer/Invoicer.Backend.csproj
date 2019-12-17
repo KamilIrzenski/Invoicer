@@ -55,8 +55,10 @@
     <Compile Include="Entities\Invoice.cs" />
     <Compile Include="Entities\InvoiceItem.cs" />
     <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\Setting.cs" />
     <Compile Include="Initializers\InvoiceDbInitializer.cs" />
     <Compile Include="InvoiceDbContext.cs" />
+    <Compile Include="InvoiceManager.cs" />
     <Compile Include="ProductManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
