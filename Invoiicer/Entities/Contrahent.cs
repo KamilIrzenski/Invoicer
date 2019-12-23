@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Invoicer.Entities
 {
-    public class Contrahent
+     public class Contrahent
     {
         [Key]
         public int CompanyID { get; set; }
@@ -18,5 +19,12 @@ namespace Invoicer.Entities
         public string ZIPCode { get; set; }
         public string FlatNumber { get; set; }
         public bool IsContrahent { get; set; }
+
+        //public override string ToString()
+        //{
+        //    return "dupa";
+        //}
     }
+
+
 }

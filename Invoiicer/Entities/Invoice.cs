@@ -25,6 +25,16 @@ namespace Invoicer.Entities
         {
             get { return $"FV\\{NumberYear}\\{NumberMonth}\\{NumberOrder}"; }
         }
+
+        public string VendorName
+        {
+            get { return Vendor.Name; }
+        }
+
+        public string ReceiverName
+        {
+            get { return Reciever.Name; }
+        }
     }
 
 

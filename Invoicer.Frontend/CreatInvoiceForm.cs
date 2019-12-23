@@ -111,7 +111,7 @@ namespace Invoicer.Frontend
             i.PaymentDate = Convert.ToDateTime(dateTimePicker1.Text);
             i.NumberMonth = month;
             i.NumberYear = year;
-            //i.InvoiceItems = addedListBox.Items;
+           // i.InvoiceItems = addedListBox.Items;
 
             InvoiceManager.AddInvoice(i);
             MessageBox.Show("Created");

@@ -2,28 +2,36 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Invoicer.Entities;
+using System.Data.SqlClient;
 
 namespace Invoicer.Frontend
 {
     public partial class InvoicesForm : Form
     {
-        public List<Invoice> InvoiceList = new List<Invoice>();
+        SqlConnection cn = new SqlConnection(@"data source=.\SQLEXPRESS;initial catalog=Invoicer;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework");
+        public SqlDataAdapter da;
+        DataTable dt = new DataTable();
+
+
+
         public InvoicesForm()
         {
             InitializeComponent();
 
-            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
             {
-
-                InvoiceList = invoiceDbContext.Invoices.ToList();
-                dataGridView.DataSource = InvoiceList;
+                string command = "select * from Invoices";
+               da = new SqlDataAdapter(command,cn);
+                da.Fill(dt);
+                dataGridView.DataSource = dt;
             }
         }
+
     }
 }
