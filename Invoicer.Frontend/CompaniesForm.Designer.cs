@@ -42,10 +42,11 @@
             this.flatNumberTextBox = new System.Windows.Forms.TextBox();
             this.addCompaniesBtn = new System.Windows.Forms.Button();
             this.cancelBtn = new System.Windows.Forms.Button();
-            this.companiesListBox = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.removeBtn = new System.Windows.Forms.Button();
+            this.dataGridViewCompanies = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompanies)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -156,22 +157,14 @@
             // 
             // cancelBtn
             // 
-            this.cancelBtn.Location = new System.Drawing.Point(713, 247);
+            this.cancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelBtn.Location = new System.Drawing.Point(1004, 295);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(75, 23);
             this.cancelBtn.TabIndex = 13;
             this.cancelBtn.Text = "Cancel";
             this.cancelBtn.UseVisualStyleBackColor = true;
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
-            // 
-            // companiesListBox
-            // 
-            this.companiesListBox.FormattingEnabled = true;
-            this.companiesListBox.ItemHeight = 16;
-            this.companiesListBox.Location = new System.Drawing.Point(304, 51);
-            this.companiesListBox.Name = "companiesListBox";
-            this.companiesListBox.Size = new System.Drawing.Size(484, 180);
-            this.companiesListBox.TabIndex = 14;
             // 
             // label7
             // 
@@ -193,7 +186,8 @@
             // 
             // removeBtn
             // 
-            this.removeBtn.Location = new System.Drawing.Point(632, 247);
+            this.removeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.removeBtn.Location = new System.Drawing.Point(923, 295);
             this.removeBtn.Name = "removeBtn";
             this.removeBtn.Size = new System.Drawing.Size(75, 23);
             this.removeBtn.TabIndex = 17;
@@ -201,15 +195,27 @@
             this.removeBtn.UseVisualStyleBackColor = true;
             this.removeBtn.Click += new System.EventHandler(this.removeBtn_Click);
             // 
+            // dataGridViewCompanies
+            // 
+            this.dataGridViewCompanies.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewCompanies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCompanies.Location = new System.Drawing.Point(315, 51);
+            this.dataGridViewCompanies.Name = "dataGridViewCompanies";
+            this.dataGridViewCompanies.RowTemplate.Height = 24;
+            this.dataGridViewCompanies.Size = new System.Drawing.Size(764, 215);
+            this.dataGridViewCompanies.TabIndex = 18;
+            // 
             // CompaniesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(807, 282);
+            this.ClientSize = new System.Drawing.Size(1092, 328);
+            this.Controls.Add(this.dataGridViewCompanies);
             this.Controls.Add(this.removeBtn);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.companiesListBox);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.addCompaniesBtn);
             this.Controls.Add(this.flatNumberTextBox);
@@ -226,6 +232,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CompaniesForm";
             this.Text = "CompaniesForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCompanies)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,9 +254,9 @@
         private System.Windows.Forms.TextBox flatNumberTextBox;
         private System.Windows.Forms.Button addCompaniesBtn;
         private System.Windows.Forms.Button cancelBtn;
-        private System.Windows.Forms.ListBox companiesListBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button removeBtn;
+        private System.Windows.Forms.DataGridView dataGridViewCompanies;
     }
 }

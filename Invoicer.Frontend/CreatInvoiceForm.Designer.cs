@@ -106,11 +106,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(336, 279);
+            this.label7.Location = new System.Drawing.Point(339, 299);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 17);
+            this.label7.Size = new System.Drawing.Size(61, 17);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Amount";
+            this.label7.Text = "Quantity";
             // 
             // label8
             // 
@@ -141,9 +141,9 @@
             // 
             // addBtn
             // 
-            this.addBtn.Location = new System.Drawing.Point(429, 299);
+            this.addBtn.Location = new System.Drawing.Point(496, 300);
             this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(75, 23);
+            this.addBtn.Size = new System.Drawing.Size(84, 22);
             this.addBtn.TabIndex = 11;
             this.addBtn.Text = "Add";
             this.addBtn.UseVisualStyleBackColor = true;
@@ -185,7 +185,7 @@
             // 
             // amountTextBox
             // 
-            this.amountTextBox.Location = new System.Drawing.Point(339, 299);
+            this.amountTextBox.Location = new System.Drawing.Point(406, 299);
             this.amountTextBox.Name = "amountTextBox";
             this.amountTextBox.Size = new System.Drawing.Size(84, 22);
             this.amountTextBox.TabIndex = 18;

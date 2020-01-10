@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Invoiicer.Entities
 {
-    public class Setting
+    public class Settings
     {
         [Key]
         public string Name { get; set; }

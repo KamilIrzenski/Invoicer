@@ -1,4 +1,5 @@
 
+using System.Data.Entity.ModelConfiguration.Conventions;
 using Invoicer.Entities;
 using Invoicer.Initializers;
 using Invoiicer.Entities;
@@ -20,7 +21,8 @@ namespace Invoicer
         public DbSet<Contrahent> Companies { get; set; }
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceItem> InvoiceItems { get; set; }
-        public DbSet<Setting> Settings { get; set; }
+        public DbSet<Settings> Settings { get; set; }
+
     }
 
 

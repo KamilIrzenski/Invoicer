@@ -17,5 +17,17 @@ namespace Invoicer
                 invoiceDbContext.SaveChanges();
             }
         }
+        public static void AddInvoiceItems(InvoiceItem ii)
+        {
+            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
+            {
+                Product product = invoiceDbContext.Products.Where(x => x.ProductID == ii.Product.ProductID).First();
+                ii.Product = product;
+
+
+                invoiceDbContext.InvoiceItems.Add(ii);
+                invoiceDbContext.SaveChanges();
+            }
+        }
     }
 }

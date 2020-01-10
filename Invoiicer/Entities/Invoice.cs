@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Invoicer.Entities;
 
 namespace Invoicer.Entities
@@ -19,22 +20,35 @@ namespace Invoicer.Entities
         public int NumberYear { get; set; }
         public DateTime IssuingDate { get; set; }
         public DateTime PaymentDate { get; set; }
-        public ICollection<InvoiceItem> InvoiceItems { get; set; }
+        //public ICollection<InvoiceItem> InvoiceItems { get; set; }
+     //   public InvoiceItem InvoiceItem{ get; set; }
 
         public string InvoiceNumber
         {
             get { return $"FV\\{NumberYear}\\{NumberMonth}\\{NumberOrder}"; }
         }
 
+        //public string ItemName
+        //{
+        //    get => InvoiceItem.ItemName;
+        //    set => InvoiceItem.ItemName = value;
+        //}
+
         public string VendorName
         {
-            get { return Vendor.Name; }
+            get => Vendor.Name;
+
+            set => Vendor.Name = value;
         }
 
         public string ReceiverName
         {
             get { return Reciever.Name; }
+
+            set => Reciever.Name = value;
         }
+
+    
     }
 
 

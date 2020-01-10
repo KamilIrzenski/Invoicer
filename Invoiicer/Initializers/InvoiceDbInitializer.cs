@@ -26,9 +26,9 @@ namespace Invoicer.Initializers
             companies.Add(new Contrahent() { Name = "Ziomex", City = "Swilcza", Street = "Dobra", FlatNumber = "56", ZIPCode = "36-071", TaxNumber = "255632145", IsContrahent = true });
             companies.Add(new Contrahent() { Name = "Daarex", City = "Przybyszowka", Street = "Krakowska", FlatNumber = "21", ZIPCode = "37-071", TaxNumber = "879654321", IsContrahent = false });
             context.Companies.AddRange(companies);
-            
-            IList<Setting> settings = new List<Setting>();
-            settings.Add(new Setting() { Name = "InvoiceNumber", Value = "FV" });
+
+            IList<Settings> settings = new List<Settings>();
+            settings.Add(new Settings() { Name = "InvoiceNumber", Value = "FV" });
             context.Settings.AddRange(settings);
 
             base.Seed(context);

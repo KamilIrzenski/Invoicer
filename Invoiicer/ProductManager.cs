@@ -22,12 +22,12 @@ namespace Invoicer
             }
         }
 
-        public static List<Product> GetProducts()
+        public static List<Product> GetProducts(InvoiceDbContext invoiceDbContext)
         {
-            using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
-            {
+          //  using (InvoiceDbContext invoiceDbContext = new InvoiceDbContext())
+            //{
                 return invoiceDbContext.Products.ToList();
-            }
+            //}
         }
 
         public static void DeleteProduct(Product p)
