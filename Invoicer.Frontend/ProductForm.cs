@@ -18,6 +18,7 @@ namespace Invoicer.Frontend
     public partial class ProductForm : Form
     {
         public List<Product> products;
+        private InvoiceDbContext _invoiceDbContext = new InvoiceDbContext();
 
         public ProductForm()
         {
@@ -27,7 +28,7 @@ namespace Invoicer.Frontend
 
         private void ShowList()
         {
-            products = ProductManager.GetProducts();
+            products = ProductManager.GetProducts(_invoiceDbContext);
             productListBox.ValueMember = "Id";
             productListBox.DisplayMember = "Name";
             productListBox.DataSource = products;

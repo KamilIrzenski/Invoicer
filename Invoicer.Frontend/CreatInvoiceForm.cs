@@ -43,12 +43,10 @@ namespace Invoicer.Frontend
 
         private void ShowList()
         {
-            //products = InvoiceDbContext.Products.ToList();
             products = ProductManager.GetProducts(InvoiceDbContext);
             productListBox.ValueMember = "Id";
             productListBox.DisplayMember = "Name";
             productListBox.DataSource = products;
-
             companies = InvoiceDbContext.Companies.ToList();
             vendorListBox.ValueMember = "Id";
             vendorListBox.DisplayMember = "Name";
@@ -72,12 +70,6 @@ namespace Invoicer.Frontend
         {
 
             {
-                // DbSet<Settings> settings = db.Settings;
-                // IList<Settings> qAllSettings = settings.ToList();
-                // IList<Settings> qSetting = qAllSettings.Where(x => x.Name == "InvoiceNumber").ToList();
-                // IList<string> values = qSetting.Select(x => x.Value).ToList();
-                // string value = values.FirstOrDefault();
-
                 string invoiceNumber = string.Empty;
                 invoiceNumber = InvoiceDbContext.Settings.Where(x => x.Name == "InvoiceNumber").Select(x => x.Value).FirstOrDefault();
                 month = DateTime.Now.Month;
@@ -88,15 +80,12 @@ namespace Invoicer.Frontend
                 maxNumber++;
                 nrInvoiceTextBox.Text = invoiceNumber + "/" + year + "/" + month + "/" + maxNumber;
             }
-            //DateTime d = System.DateTime.Now;
-            //invno = invno + 1;
-            //nrInvoiceTextBox.Text = string.Format("FV/{0:yyyy}/{0:MM}/{1:0000}", d, invno);
+
         }
         private void ShowListAdded()
         {
             addedListBox.ValueMember = "Id";
             addedListBox.DisplayMember = "ItemName";
-
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
@@ -107,16 +96,11 @@ namespace Invoicer.Frontend
         private void addBtn_Click(object sender, EventArgs e)
         {
             InvoiceItem ii = new InvoiceItem();
-            //var p = productListBox.SelectedItem as Product;
             ii.Product = productListBox.SelectedItem as Product;
-            //p.Amount = Convert.ToInt32(amountTextBox.Text);
             ii.Quantity = Convert.ToInt32(amountTextBox.Text);
             ii.InvoiceID = maxNumber;
             addedListBox.Items.Add(ii);
             ShowListAdded();
-            //ii.ProductID = addedListBox.Items;
-            // InvoiceManager.AddInvoiceItems(ii);
-
             InvoiceDbContext.InvoiceItems.Add(ii);
             InvoiceDbContext.SaveChanges();
         }
@@ -132,9 +116,6 @@ namespace Invoicer.Frontend
             i.PaymentDate = Convert.ToDateTime(dateTimePicker1.Text);
             i.NumberMonth = month;
             i.NumberYear = year;
-           // i.InvoiceItem = addedListBox.Container as InvoiceItem;
-            // i.InvoiceItem = addedListBox.SelectedItems as InvoiceItem;
-            // InvoiceManager.AddInvoice(i);
             InvoiceDbContext.Invoices.Add(i);
             InvoiceDbContext.SaveChanges();
             MessageBox.Show("Created");

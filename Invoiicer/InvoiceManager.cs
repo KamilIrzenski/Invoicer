@@ -23,8 +23,6 @@ namespace Invoicer
             {
                 Product product = invoiceDbContext.Products.Where(x => x.ProductID == ii.Product.ProductID).First();
                 ii.Product = product;
-
-
                 invoiceDbContext.InvoiceItems.Add(ii);
                 invoiceDbContext.SaveChanges();
             }

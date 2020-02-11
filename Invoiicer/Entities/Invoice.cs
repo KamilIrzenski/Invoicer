@@ -20,19 +20,11 @@ namespace Invoicer.Entities
         public int NumberYear { get; set; }
         public DateTime IssuingDate { get; set; }
         public DateTime PaymentDate { get; set; }
-        //public ICollection<InvoiceItem> InvoiceItems { get; set; }
-     //   public InvoiceItem InvoiceItem{ get; set; }
-
+     
         public string InvoiceNumber
         {
             get { return $"FV\\{NumberYear}\\{NumberMonth}\\{NumberOrder}"; }
         }
-
-        //public string ItemName
-        //{
-        //    get => InvoiceItem.ItemName;
-        //    set => InvoiceItem.ItemName = value;
-        //}
 
         public string VendorName
         {
